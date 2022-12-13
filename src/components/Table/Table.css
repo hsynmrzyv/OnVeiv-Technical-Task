@@ -1,0 +1,48 @@
+.app__table {
+  width: 700px;
+  border: 3px solid #000;
+  font-family: "Visby", sans-serif;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+}
+
+.app__table th,
+.app__table td {
+  border: 3px solid #000;
+  border-collapse: collapse;
+  /* padding: 20px; */
+  text-align: center;
+  font-weight: 700;
+}
+
+.app__table tr {
+  height: 60px;
+}
+
+.checkbox {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 24px;
+  height: 24px;
+  border: 2px solid #000;
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+}
+
+.checkbox::after {
+  content: url("../../../public/assets/Check.png");
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.checkbox:checked {
+  background-color: #000;
+}
+
+.checkbox:checked::after {
+  display: block;
+}

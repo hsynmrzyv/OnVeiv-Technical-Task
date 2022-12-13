@@ -1,0 +1,9 @@
+.app {
+  width: 700px;
+}
+
+.app__actions {
+  margin-bottom: 72px;
+  display: flex;
+  justify-content: space-between;
+}
